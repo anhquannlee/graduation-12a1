@@ -83,10 +83,12 @@ th {
 .hidden {
     display: none;
 }
+
 @media (max-width: 768px) {
     body {
-        zoom: 0.6; /* Giảm kích thước xuống 60% */
+        zoom: 0.6;
+        transform: scale(0.6);
+        transform-origin: top center;
     }
 }
 
-}
