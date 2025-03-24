@@ -83,9 +83,10 @@ th {
 .hidden {
     display: none;
 }
-@media (max-width: 768px) { /* Chỉ áp dụng cho màn hình nhỏ hơn 768px (điện thoại) */
+@media (max-width: 768px) {
     body {
-        transform: scale(0.6);
-        transform-origin: top center;
+        zoom: 0.6; /* Giảm kích thước xuống 60% */
     }
+}
+
 }
