@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Mời Chụp Kỷ Yếu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Graduation of 12A1</h1>
+        <h2><a href="https://www.facebook.com/quan.lee0912" target="_blank">Lê Anh Quân</a></h2>
+
+        
+        <div class="class-list" id="class-12A2">
+            <h3 onclick="toggleTable('table-12A2')">Lớp 12A2</h3>
+            <table id="table-12A2" class="hidden">
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Lời Mời</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="class-list" id="class-12A3">
+            <h3 onclick="toggleTable('table-12A3')">Lớp 12A3</h3>
+            <table id="table-12A3" class="hidden">
+                <tr>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Lời Mời</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="invite-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3 id="invite-name" class="name-box"></h3>
+            <p id="invite-message"></p>
+            <button class="close-button" onclick="closeInvite()">Đóng</button>
+        </div>
+    </div>
+    <div class="info-box">
+        <p><strong>Địa điểm:</strong> Trường Hoàng Việt | 42 Phạm Hùng | TP.BMT ĐakLak</p>
+        <p><strong>Thời gian:</strong> 10:00 AM | Chủ nhật | ngày 6 tháng 4 năm 2025</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

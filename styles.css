@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('img1.jpg') no-repeat center center;
+    background-size: cover;
+    filter: blur(3px) brightness(60%);
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(40, 40, 40, 0.9);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    color: #f6a1a2;
+}
+
+h2 a {
+    color: #d99cb3;
+    text-decoration: none; /* Xóa gạch chân */
+    transition: color 0.3s ease-in-out;
+}
+
+h2 a:hover {
+    color: #ffc0dd; /* Màu sáng hơn khi di chuột */
+}
+
+.class-list {
+    margin-top: 20px;
+    text-align: left;
+    cursor: pointer;
+}
+
+h3 {
+    background-color: #586692;
+    color: #e1d8d8;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+h3:hover {
+    background-color: #9c93cd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #baa9c3;
+    color: #121212;
+}
+
+.hidden {
+    display: none;
+}
