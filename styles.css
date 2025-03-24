@@ -24,12 +24,15 @@ body {
 }
 
 .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(40, 40, 40, 0.9);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
     position: relative;
     z-index: 1;
-    padding: 20px;
-    margin-bottom: 100px; /* Đảm bảo có khoảng trống để cuộn */
 }
-
 
 h1 {
     color: #f6a1a2;
