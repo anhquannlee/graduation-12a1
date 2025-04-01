@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const class12A2 = [
-        { stt: 1, name: "Trần Văn Vũ", class: "12A2", invite: "Lâu r deo đi chơi cuối tuần thì ráng lên chơi cho vui" },
+        { stt: 1, name: "Trần Văn Vũ", class: "12A2", invite: "Lên chơi mọe đi cho vui ku ơi" },
         { stt: 2, name: "Nguyễn Công Thành", class: "12A2", invite: "Thân thì thân nhưng hơi đao đao tí:)) với lên chơi cho bạn vui" },
         { stt: 3, name: "Mai Đình Kiệt", class: "12A2", invite: "Ờ del có gì nói:))" },
         { stt: 4, name: "Nguyễn Phương Minh Quân", class: "12A2", invite: "Để lại mullet cho đẹp bạn ơi rồi CN lên chụp tới tôi" },
