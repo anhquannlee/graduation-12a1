@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Comic Sans MS, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -87,3 +87,29 @@ th {
 .hidden {
     display: none;
 }
+
+.countdown-box {
+    margin-top: 20px;
+    margin: 20px auto; 
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1); /* Hơi mờ nhưng vẫn rõ */
+    color: #ffceb8;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+
+.info-box {
+    margin-top: 20px;
+    margin: 20px auto; 
+    padding: 15px;
+    background: rgba(108, 145, 192, 0.1); /* Hơi mờ nhưng vẫn rõ */
+    color: #ffceb8;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
