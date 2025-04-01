@@ -3,8 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
         { stt: 1, name: "Trần Văn Vũ", class: "12A2", invite: "Lâu r deo đi chơi cuối tuần thì ráng lên chơi cho vui" },
         { stt: 2, name: "Nguyễn Công Thành", class: "12A2", invite: "Thân thì thân nhưng hơi đao đao tí:)) với lên chơi cho bạn vui" },
         { stt: 3, name: "Mai Đình Kiệt", class: "12A2", invite: "Ờ del có gì nói:))" },
-        { stt: 4, name: "Nguyễn Quý Thiên", class: "12A2", invite: "Lâu lâu ghéc ghéc :)), lên đây chụp với mấy đứa lớp t mong m ko lười đi:))" },
-        { stt: 5, name: "Ngô Đào Phúc Quyên", class: "12A2", invite: "Lên chụp với t nhưng lần này là đổi nhân vật chính trong hình chụp:))" }
+        { stt: 4, name: "Nguyễn Phương Minh Quân", class: "12A2", invite: "Để lại mullet cho đẹp bạn ơi rồi CN lên chụp tới tôi" },
+        { stt: 5, name: "Nguyễn Quý Thiên", class: "12A2", invite: "Lâu lâu ghéc ghéc :)), lên đây chụp với mấy đứa lớp t mong m ko lười đi:))" },
+        { stt: 6, name: "Ngô Đào Phúc Quyên", class: "12A2", invite: "Lên chụp với t nhưng lần này là đổi nhân vật chính trong hình chụp:))" }
     ];
 
     const class12A3 = [
@@ -39,6 +40,28 @@ document.addEventListener("DOMContentLoaded", function () {
     function closeInvite() {
         document.getElementById("invite-modal").classList.add("hidden");
     }
+
+    function updateCountdown() {
+        const targetDate = new Date("2025-04-06T09:30:00").getTime(); // Ngày & giờ đích
+        const now = new Date().getTime();
+        const timeLeft = targetDate - now;
+
+        if (timeLeft > 0) {
+            let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+            
+            document.getElementById("countdown-timer").innerText =
+                `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        } else {
+            document.getElementById("countdown-timer").innerText = "Đã đến giờ chụp!";
+        }
+    }
+
+    // Cập nhật mỗi giây
+    setInterval(updateCountdown, 1000);
+    updateCountdown(); // Gọi ngay khi tải trang
 
     populateTable("table-12A2", class12A2);
     populateTable("table-12A3", class12A3);
